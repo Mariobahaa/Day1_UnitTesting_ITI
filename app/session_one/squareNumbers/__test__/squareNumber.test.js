@@ -1,17 +1,13 @@
-import { TestScheduler } from "jest";
-import { capitalizeText } from "../index";
 
-describe('Capitalize text',() => {
-    test('should capitalize only the first letter',()=>{
-            const input = 'hamada';
-            const output = 'Hamada';
-            expect(capitalizeText(input)).toEqual(output);
+import { squareNumber} from "../index";
+
+describe('get the sqaure root of a number',() => {
+    test('should return the square root',()=>{
+            const input = 16;
+            const output = 4;
+            expect(squareNumber(input)).toEqual(output);
     });
 
-    test('should return an empty string',()=>{
-        const input = 12;
-        const output = '';
-        expect(capitalizeText(input)).toEqual(output);
-});
+  
 
 });
